@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "576656798655",
+    "project_id": "mediassist-fss",
+    "storage_bucket": "mediassist-fss.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576656798655:android:dd1b84aa4676c2e939270a",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2M1s5KE4z_PWN-B-f5lgozGdHCXTrruM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

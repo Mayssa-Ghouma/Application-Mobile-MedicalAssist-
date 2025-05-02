@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#e3f2fe">
+
+    <!-- Titre de la section -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une ordonance"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#003366"
+        android:layout_marginBottom="70dp"/>
+
+    <!-- Champ Nom -->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom du l'ordonance"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/img_medication"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Bouton pour choisir une image -->
+    <Button
+        android:id="@+id/btn_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une photo"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:backgroundTint="#003366"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Bouton Terminer -->
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terminer"
+        android:backgroundTint="#003366"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:padding="12dp"/>
+</LinearLayout>

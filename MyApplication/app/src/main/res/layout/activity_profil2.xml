@@ -1,0 +1,333 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:spacing="12dp">
+
+        <!-- Nom -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"
+            android:minHeight="56dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvNom"
+                android:layout_width="82dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginEnd="218dp"
+                android:layout_marginRight="218dp"
+                android:layout_toStartOf="@+id/btnEditNom"
+                android:layout_toLeftOf="@+id/btnEditNom"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="8dp"
+                android:text="@string/nom"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnEditNom"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Modifier"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="#4CAF50" />
+        </RelativeLayout>
+
+        <!-- Prénom -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"
+            android:minHeight="56dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvPrenom"
+                android:layout_width="116dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="179dp"
+                android:layout_marginRight="179dp"
+                android:layout_toStartOf="@+id/btnEditPrenom"
+                android:layout_toLeftOf="@+id/btnEditPrenom"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="8dp"
+                android:text="@string/pr_nom"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnEditPrenom"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Modifier"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="#4CAF50" />
+        </RelativeLayout>
+
+        <!-- Email -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"
+            android:minHeight="56dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="232dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="73dp"
+                android:layout_marginRight="73dp"
+                android:layout_toStartOf="@+id/btnEditEmail"
+                android:layout_toLeftOf="@+id/btnEditEmail"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="8dp"
+                android:text="@string/email"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnEditEmail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Modifier"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="#4CAF50" />
+        </RelativeLayout>
+
+        <!-- Téléphone -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"
+            android:minHeight="56dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvTelephone"
+                android:layout_width="116dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="178dp"
+                android:layout_marginRight="178dp"
+                android:layout_toStartOf="@+id/btnEditTelephone"
+                android:layout_toLeftOf="@+id/btnEditTelephone"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="8dp"
+                android:text="@string/t_l_phone"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnEditTelephone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Modifier"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="#4CAF50" />
+        </RelativeLayout>
+
+        <!-- Âge -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"
+            android:minHeight="56dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginEnd="240dp"
+                android:layout_marginRight="240dp"
+                android:layout_toStartOf="@+id/btnEditAge"
+                android:layout_toLeftOf="@+id/btnEditAge"
+                android:drawableStart="@drawable/ic_age"
+                android:drawablePadding="8dp"
+                android:text="@string/ge"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnEditAge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Modifier"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="#4CAF50" />
+        </RelativeLayout>
+
+        <!-- Poids -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"
+            android:minHeight="56dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvPoids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="224dp"
+                android:layout_marginRight="224dp"
+                android:layout_toStartOf="@+id/btnEditPoids"
+                android:layout_toLeftOf="@+id/btnEditPoids"
+                android:drawableStart="@drawable/ic_weight"
+                android:drawablePadding="8dp"
+                android:text="@string/poids"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnEditPoids"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Modifier"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="#4CAF50" />
+        </RelativeLayout>
+
+        <!-- Taille -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"
+            android:minHeight="56dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvTaille"
+                android:layout_width="89dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="206dp"
+                android:layout_marginRight="206dp"
+                android:layout_toStartOf="@+id/btnEditTaille"
+                android:layout_toLeftOf="@+id/btnEditTaille"
+                android:drawableStart="@drawable/ic_height"
+                android:drawablePadding="8dp"
+                android:text="@string/taille"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnEditTaille"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Modifier"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="#4CAF50" />
+        </RelativeLayout>
+
+        <!-- Sexe -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"
+            android:minHeight="56dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvSexe"
+                android:layout_width="96dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="199dp"
+                android:layout_marginRight="199dp"
+                android:layout_toStartOf="@+id/btnEditSexe"
+                android:layout_toLeftOf="@+id/btnEditSexe"
+                android:drawableStart="@drawable/ic_gender"
+                android:drawablePadding="8dp"
+                android:text="@string/sexe"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnEditSexe"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Modifier"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="#4CAF50" />
+        </RelativeLayout>
+
+        <!-- Groupe Sanguin -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"
+            android:minHeight="56dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvGroupeSanguin"
+                android:layout_width="98dp"
+                android:layout_height="39dp"
+                android:layout_marginEnd="197dp"
+                android:layout_marginRight="197dp"
+                android:layout_toStartOf="@+id/btnEditGroupeSanguin"
+                android:layout_toLeftOf="@+id/btnEditGroupeSanguin"
+                android:drawableStart="@drawable/ic_blood"
+                android:drawablePadding="8dp"
+                android:text="@string/groupe_sanguin"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnEditGroupeSanguin"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Modifier"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="#4CAF50" />
+        </RelativeLayout>
+
+        <!-- Bouton Enregistrer (conservé au cas où) -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/bleu2"
+            android:minHeight="56dp"
+            android:text="@string/enregistrer"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f2fe"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <!-- Logo agrandi -->
+        <ImageView
+            android:id="@+id/action_image"
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo" />
+
+        <!-- Champ Nom d'utilisateur -->
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Nom d'utilisateur"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Champ Mot de passe -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Bouton de Connexion -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#93C856"
+            android:padding="12dp"
+            android:text="CONNEXION"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Texte pour l'inscription -->
+        <TextView
+            android:id="@+id/txt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Si vous n'avez pas de compte chez nous, créez un "
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <!-- Lien cliquable "Compte" -->
+        <TextView
+            android:id="@+id/link_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_register"
+            android:layout_marginTop="-4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Compte"
+            android:textColor="#0000FF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

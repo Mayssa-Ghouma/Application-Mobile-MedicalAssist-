@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nombre_fois_array">
+        <item>1 fois par jour</item>
+        <item>2 fois par jour</item>
+        <item>3 fois par jour</item>
+    </string-array>
+</resources>

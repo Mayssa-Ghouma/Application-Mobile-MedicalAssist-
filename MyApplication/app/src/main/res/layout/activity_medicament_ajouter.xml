@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#e3f2fe">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:text="Nouveau Médicament"
+            android:textColor="#F88F52"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Bouton pour choisir une image -->
+        <Button
+            android:id="@+id/btn_select_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#2196F3"
+            android:drawableLeft="@android:drawable/ic_menu_camera"
+            android:text="Ajouter une photo"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/medicineImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ordonance" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/prevMedicineType"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gauche"
+                android:layout_marginEnd="8dp"
+                app:tint="#121212" />
+
+            <TextView
+                android:id="@+id/medicineTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Sirop"
+                android:textColor="#082BCB"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/nextMedicineType"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/droite"
+                android:tint="#121212"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Champ Nom -->
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Nom"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/doseUnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:text="Unité de Dose"
+            android:textColor="#082BCB"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/doseUnitSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#82CFD8"
+            android:padding="8dp" />
+
+        <!-- Nombre de doses -->
+        <TextView
+            android:id="@+id/nbr_dose_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:paddingTop="10dp"
+            android:text="Nombre de doses"
+            android:textColor="#082BCB"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/nbr_dose_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#82CFD8"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/nbr_fois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:paddingTop="10dp"
+            android:text="Nombre de fois par jour"
+            android:textColor="#082BCB"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#82CFD8"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:id="@+id/horaireContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <!-- Les champs horaire seront ajoutés dynamiquement ici -->
+
+        </LinearLayout>
+
+        <!-- Bouton Terminer -->
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#003366"
+            android:padding="12dp"
+            android:text="Terminer"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

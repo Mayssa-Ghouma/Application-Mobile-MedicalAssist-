@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- Pour Android 10+ -->
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <!-- Pour Android 13+ -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="MediAssist"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:node="merge"
+        tools:replace="android:icon,android:label,android:theme"
+        tools:targetApi="31">
+        <activity
+            android:name=".ContactDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ajout_rendezVous"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"> <!-- Add this line -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ordonance_ajouter"
+            android:exported="false" />
+        <activity
+            android:name=".ajout_ordonance"
+            android:exported="false" />
+        <activity
+            android:name=".rendezVous_ajouter"
+            android:exported="false" />
+        <activity
+            android:name=".contact_ajouter"
+            android:exported="false" />
+        <activity
+            android:name=".ajout_contact"
+            android:exported="false" />
+        <activity
+            android:name=".medicament_ajouter"
+            android:exported="false" />
+        <activity
+            android:name=".ajoutmed"
+            android:exported="false" />
+        <activity
+            android:name=".interfac_login"
+            android:exported="false" />
+        <activity
+            android:name=".activity_inscrir"
+            android:exported="false" />
+        <activity
+            android:name=".interface2"
+            android:exported="false" />
+
+        <receiver
+            android:name=".MedicationReminderReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".RdvReminderReceiver"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

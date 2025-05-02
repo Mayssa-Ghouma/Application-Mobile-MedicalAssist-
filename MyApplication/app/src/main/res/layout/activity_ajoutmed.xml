@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Titre de la section -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Médicaments"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Message si la liste est vide -->
+    <TextView
+        android:id="@+id/tvMessageVide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pas de médicaments, cliquez sur le bouton ci-dessous pour ajouter un médicament."
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>
+
+    <!-- Liste des médicaments -->
+    <ListView
+        android:id="@+id/lvMedications"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"/>
+
+    <!-- Bouton d'ajout -->
+    <Button
+        android:id="@+id/btnAjouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter médicament"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"/>
+
+</LinearLayout>

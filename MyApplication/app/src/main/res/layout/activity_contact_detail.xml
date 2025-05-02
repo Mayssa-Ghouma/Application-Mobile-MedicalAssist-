@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#e3f2fe">
+
+    <ImageView
+        android:id="@+id/imgContact"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="Photo du contact"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Nom du contact"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTelephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:gravity="center"
+        android:text="Numéro de téléphone"
+        android:textColor="#555555"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnModifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_background"
+        android:text="🖊️ Modifier"
+        android:textColor="#FFC107" />
+
+    <Button
+        android:id="@+id/btnSupprimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_background"
+        android:text="❌ Supprimer"
+        android:textColor="#EF0505" />
+
+    <Button
+        android:id="@+id/btnAppeler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📞 Appeler"
+        android:background="@drawable/button_background"
+        android:textColor="#4CAF50" />
+</LinearLayout>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="nom">Nom</string>
+    <string name="pr_nom">Prénom</string>
+    <string name="email">Email</string>
+    <string name="t_l_phone">Téléphone</string>
+    <string name="ge">Âge</string>
+    <string name="poids">Poids</string>
+    <string name="taille">Taille</string>
+    <string name="sexe">Sexe</string>
+    <string name="groupe_sanguin">Groupe Sanguin</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string-array name="nombre_dose_array">
+        <item>1 dose</item>
+        <item>2 doses</item>
+        <item>3 doses</item>
+    </string-array>
+
+    <string name="action_modifier">Modifier</string>
+    <string name="action_supprimer">Supprimer</string>
+    <string name="action_annuler">Annuler</string>
+    <string name="confirm_delete_title">Confirmation</string>
+    <string name="confirm_delete_message">Êtes-vous sûr de vouloir supprimer %s ?</string>
+    <string name="delete_success">Médicament supprimé</string>
+    <string name="delete_error">Erreur de suppression</string>
+    <string name="update_button_text">Mettre à jour</string>
+    <string name="update_success">Médicament mis à jour avec succès</string>
+    <string name="update_error">Erreur lors de la mise à jour</string>
+    <!-- Medication List -->
+    <string name="medication_action_message">Que voulez-vous faire avec ce médicament ?</string>
+    <string name="confirm_yes">Oui</string>
+    <string name="confirm_no">Non</string>
+    <string name="load_error">Erreur de chargement</string>
+    <string name="user_not_logged_in">Utilisateur non connecté</string>
+
+    <!-- Medication Form -->
+    <string name="done_button_text">Terminer</string>
+    <string name="save_success">Médicament enregistré</string>
+    <string name="save_error">Erreur d\'enregistrement</string>
+    <string name="horaire_hint">Horaire %d (HH:MM)</string>
+    <!-- Messages de validation -->
+    <string name="required_fields">Veuillez remplir tous les champs obligatoires</string>
+    <string name="invalid_time_format">Format horaire invalide (utilisez HH:MM)</string>
+    <string name="date_format_error">Erreur de format de date</string>
+    <string name="check_availability_error">Erreur lors de la vérification des disponibilités</string>
+
+    <!-- Messages de conflit -->
+    <string name="rdv_time_conflict">Impossible d\'ajouter ce rendez-vous :\n- Un rendez-vous existe déjà à cette heure\n- Vous devez laisser 2 heures entre deux rendez-vous</string>
+    <string name="next_available_time">Prochain créneau disponible: %s</string>
+
+    <!-- Messages de succès/erreur -->
+    <string name="rdv_add_success">Rendez-vous ajouté pour le %1$s à %2$s</string>
+    <string name="rdv_add_error">Erreur lors de l\'enregistrement du rendez-vous</string>
+
+    <!-- Notifications -->
+    <string name="rdv_notif_day_before_title">Rappel de rendez-vous demain</string>
+    <string name="rdv_notif_day_before_message">Demain vous avez un rendez-vous chez %1$s (%2$s) à %4$s le %3$s</string>
+    <string name="rdv_notif_hour_before_title">Rappel de rendez-vous</string>
+    <string name="rdv_notif_hour_before_message">Dans 1 heure vous avez un rendez-vous chez %1$s (%2$s) à %3$s</string>
+
+    <string name="informations_personnelles">Informations Personnelles</string>
+    <string name="informations_medicales">Informations Médicales</string>
+    <string name="edit">Modifier</string>
+    <string name="delete">Supprimer</string>
+
+</resources>

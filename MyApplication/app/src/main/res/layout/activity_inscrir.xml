@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f2fe"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/action_image"
+            android:layout_width="233dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/logo" />
+
+        <!-- Nom -->
+        <EditText
+            android:id="@+id/input_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Nom"
+            android:padding="10dp" />
+
+        <!-- Prénom -->
+        <EditText
+            android:id="@+id/input_prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Prénom"
+            android:padding="10dp" />
+
+        <!-- Âge -->
+        <EditText
+            android:id="@+id/input_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Âge"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <!-- Sexe (Homme/Femme) -->
+       <Spinner
+        android:id="@+id/input_sexe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/edit_text"/>
+
+
+        <!-- groupes sanguins -->
+        <Spinner
+            android:id="@+id/input_sang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"/>
+
+
+        <!-- Poids -->
+        <EditText
+            android:id="@+id/input_poids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Poids"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <!-- Taille -->
+        <EditText
+            android:id="@+id/input_taille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Taille"
+            android:inputType="number"
+            android:padding="10dp" />
+
+
+        <!-- Numéro de téléphone -->
+        <EditText
+            android:id="@+id/input_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Numéro de téléphone"
+            android:inputType="phone"
+            android:padding="10dp" />
+
+        <!-- e-mail-->
+        <EditText
+            android:id="@+id/input_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="l'adresse e-mail"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <!-- Mot de passe -->
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <!-- Bouton S'inscrire -->
+        <Button
+            android:id="@+id/btn_inscrire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#93C856"
+            android:text="S'inscrire"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
